@@ -36,6 +36,7 @@ jobs:
           sudo apt-get install libvlccore-dev
           haxelib setup ~/haxelib
           haxelib install SScript 8.1.6
+          haxelib install flixel 4.11.0
           haxelib fixrepo
           haxelib install hxcpp > /dev/null --quiet
           haxe -cp ./setup -D analyzer-optimize -main Main --interp
@@ -68,6 +69,7 @@ jobs:
           haxelib setup C:/haxelib
           haxelib fixrepo
           haxelib install SScript 8.1.6
+          haxelib install flixel 4.11.0
           haxelib install hxcpp > /dev/null --quiet
           haxe -cp ./setup -D analyzer-optimize -main Main --interp
         shell: cmd
